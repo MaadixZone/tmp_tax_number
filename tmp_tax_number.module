@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains tmp_tax_number.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function tmp_tax_number_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the tmp_tax_number module.
+    case 'help.page.tmp_tax_number':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Temporal tax number, waiting for issue #2874149 to be merged to upstream. Then if any customers are there, we need to migrate from field tmp_tax_number to tax_number. The changes are taken from the patch #5 but moving to dedicated module replacing all tax_number to tmp_tax_number, after that all commerce_tax namespaces to tmp_tax_number, and the Validator is moved from VatNumber and VatNumberValidator to TmpVatNumber and TmpVatNumberValidator, Outside of the module the only line affected in commerce_tax is modules/tax/src/Plugin/Commerce/TaxType/EuropeanUnionVat.php line 60: "$customer_tax_number = \'\';" to "$customer_tax_number = $customer_profile->get(\'tax_number\')->value;"') . '</p>';
+      return $output;
+
+    default:
+  }
+}

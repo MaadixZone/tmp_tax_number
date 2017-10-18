@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+
+    - profile
+id: profile.tmp_tax_number
+field_name: tmp_tax_number
+entity_type: profile
+type: commerce_tmp_tax_number
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: true
+module: tmp_tax_number
+locked: true
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

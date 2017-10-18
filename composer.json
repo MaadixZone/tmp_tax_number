@@ -1,0 +1,14 @@
+{
+  "name": "drupal/tmp_tax_number",
+  "type": "drupal-module",
+  "description": "Temporal tax number, waiting for issue #2874149 to be merged to upstream.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/tmp_tax_number",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/tmp_tax_number",
+    "source": "http://cgit.drupalcode.org/tmp_tax_number"
+  },
+  "require": { }
+}

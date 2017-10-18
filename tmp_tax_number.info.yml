@@ -1,0 +1,5 @@
+name: Tmp tax number
+type: module
+description: Temporal tax number, waiting for issue #2874149 to be merged to upstream.
+core: 8.x
+package: Custom
